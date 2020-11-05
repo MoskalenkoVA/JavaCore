@@ -12,8 +12,9 @@ public class Main_Lesson1 {
         robot.run(new Treadmill(4444));
 
 
+        Object arrayParty [] =  {new Cat(4, 100), new Human(8,500), new Robot(200,5000)};
 
-
+        Object let1 [] = {new Wall(4), new Wall(10)};
 
 
     }
