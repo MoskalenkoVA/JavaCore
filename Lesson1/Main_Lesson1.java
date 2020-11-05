@@ -7,6 +7,12 @@ public class Main_Lesson1 {
         cat.jump(new Wall(3));
         Human human = new Human(10,1000);
         human.jump(new Wall(7));
+        Robot robot = new Robot(100, 10000);
+        robot.jump(new Wall(50));
+        robot.run(new Treadmill(4444));
+
+//        int partyArray [][] = {{new Cat(3, 100),} {}}
+
 
 
 
