@@ -11,7 +11,7 @@ public class Main_Lesson1 {
         robot.jump(new Wall(50));
         robot.run(new Treadmill(4444));
 
-//        int partyArray [][] = {{new Cat(3, 100),} {}}
+
 
 
 
