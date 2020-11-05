@@ -1,10 +1,11 @@
 package Lesson1;
 
 public class Robot {
-    public void jump () {
+    public int MaxHeight;
+    public void jump (Wall wall) {
         System.out.println("Робот прыгнул");
     }
-    public void run () {
+    public void run (Treadmill treadmill) {
         System.out.println("Робот пробежал");
     }
 
