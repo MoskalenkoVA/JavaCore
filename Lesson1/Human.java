@@ -1,6 +1,6 @@
 package Lesson1;
 
-public class Human {
+public class Human implements Actions {
     public int MaxHeight;
     public int MaxRun;
 
@@ -9,18 +9,22 @@ public class Human {
         this.MaxRun = MaxRun;
 
     }
-    public void jump (Wall wall) {
+    public boolean jump (Wall wall) {
         if (MaxHeight > wall.height) {
             System.out.println("Человек перепрыгнул стену");
+            return true;
         } else {
             System.out.println("Человек не перепрыгнул, стена высоковата!!!");
+            return false;
         }
     }
-    public void run (Treadmill treadmill) {
+    public boolean run (Treadmill treadmill) {
         if (MaxRun > treadmill.length) {
             System.out.println("Человек пробежал марафон");
+            return true;
         } else {
             System.out.println("Человек не пробежал");
+            return false;
         }
     }
 }

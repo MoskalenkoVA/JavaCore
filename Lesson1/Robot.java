@@ -1,6 +1,6 @@
 package Lesson1;
 
-public class Robot {
+public class Robot implements Actions {
     public int MaxHeight;
     public int MaxRun;
 
@@ -9,19 +9,23 @@ public class Robot {
         this.MaxRun = MaxRun;
     }
 
-    public void jump (Wall wall) {
+    public boolean jump (Wall wall) {
         if (MaxHeight > wall.height) {
             System.out.println("Робот перепрыгнул эту стену");
+            return true;
         } else {
             System.out.println("Робот не прыгнул стену");
+            return false;
         }
     }
 
-    public void run (Treadmill treadmill) {
+    public boolean run (Treadmill treadmill) {
         if (MaxRun > treadmill.length) {
             System.out.println("Робот пробежал дистанцию");
+            return true;
         } else {
             System.out.println("Робот не пробежал");
+            return false;
         }
     }
 
